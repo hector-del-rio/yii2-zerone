@@ -71,7 +71,7 @@ class ZeroneWidget extends \yii\base\Widget
         if (!empty($url) and $this->zoom === true) {
 
             \Yii::$app->view->registerCss(<<<CSS
-#$id > .image-preview:hover {
+#$id > .zerone-image-preview:hover {
     cursor: zoom-in;
     opacity: 0.5;
 }

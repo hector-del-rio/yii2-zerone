@@ -18,8 +18,8 @@ hectordelrio\zerone\assets\AssetBundle::register($this);
 
 <div id="<?= $id ?>"
      style="width: <?= $width ?>"
-     class="image-container <?= (empty($url) ? ' empty' : '') ?>"
+     class="zerone-image-container <?= (empty($url) ? ' empty' : '') ?>"
 >
-    <div class="image-preview" <?= (empty($url) ? '' : "style=\"background-image: url($url);\"") ?>></div>
-    <div class="ratio-keeper" style="padding-top: <?= $paddingTop ?>"></div>
+    <div class="zerone-image-preview" <?= (empty($url) ? '' : "style=\"background-image: url($url);\"") ?>></div>
+    <div class="zerone-ratio-keeper" style="padding-top: <?= $paddingTop ?>"></div>
 </div>

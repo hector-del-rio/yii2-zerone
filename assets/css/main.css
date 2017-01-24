@@ -1,8 +1,8 @@
-.image-container {
+.zerone-image-container {
     position: relative;
 }
 
-.image-container > .image-preview {
+.zerone-image-container > .zerone-image-preview {
     position: absolute;
     top: 0;
     right: 0;
@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
 }
 
-.image-container.empty > .image-preview {
+.zerone-image-container.empty > .zerone-image-preview {
     background-color: rgba(0, 0, 0, 0.2);
     background-image: url(../images/placeholder.svg);
     background-size: contain;
