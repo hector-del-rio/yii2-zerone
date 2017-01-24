@@ -1,0 +1,29 @@
+{
+    "name": "hector-del-rio/yii2-zerone",
+    "description": "Responsive image widget for Yii2.",
+    "type": "yii2-extension",
+    "keywords": [
+        "yii2",
+        "image",
+        "photo",
+        "picture",
+        "preview",
+        "model",
+        "behavior"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hector del Rio",
+            "email": "public.hector.del.rio@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+    },
+    "autoload": {
+        "psr-4": {
+            "hectordelrio\\zerone\\": ""
+        }
+    }
+}
