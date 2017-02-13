@@ -16,7 +16,6 @@ class ZeroneWidget extends \yii\base\Widget
     public $ratio = '16:9';
     public $url = null;
     public $size = '100%';
-    public $zoom = true;
 
     private $_paddingTop = null;
     private $_width = null;
@@ -67,25 +66,6 @@ class ZeroneWidget extends \yii\base\Widget
         $url = $this->url;
         $width = $this->_width . $this->_widthUnit;
         $paddingTop = $this->_paddingTop;
-
-        if (!empty($url) and $this->zoom === true) {
-
-            \Yii::$app->view->registerCss(<<<CSS
-#$id > .zerone-image-preview:hover {
-    cursor: zoom-in;
-    opacity: 0.5;
-}
-CSS
-            );
-
-            \Yii::$app->view->registerJs(<<<JS
-(function ($) {
-    $(document).on('click', '#$id', $.fn.zoomImage);
-})(window.jQuery);
-JS
-            );
-
-        }
 
         return $this->render('main', compact('id', 'url', 'width', 'paddingTop'));
 
